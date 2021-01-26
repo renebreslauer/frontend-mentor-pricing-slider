@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Simple, traffic-based pricing</h1>
+      <h2>Sign-up for our 30-day trial. No credit card required.</h2>
+    </div>
+    <div id="sliderContainer">
+      <div class="price-row">
+        <div class="tick-slider-value-container">
+          <div id="weightValue" class="tick-slider-value"></div>
+          <p>Pageviews</p>
+        </div>
+        <div class="price-container">
+          <p id="price"></p>
+          <p>/ month</p>
+        </div>
+      </div>
+
+      <input
+        id="weightSlider"
+        class="tick-slider-input"
+        type="range"
+        min="0"
+        max="200000"
+        step="25000"
+        value="100000"
+        data-tick-step="5"
+        data-tick-id="weightTicks"
+        data-value-id="weightValue"
+        data-progress-id="weightProgress"
+        data-handle-size="18"
+        data-min-label-id="weightLabelMin"
+        data-max-label-id="weightLabelMax"
+      />
+      <div class="billing-container">
+        <p>Monthly Billing</p>
+        <div class="toggle-container">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div>
+          <p>Yearly Billing <span class="discount">25% discount</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

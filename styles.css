@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+/* $lightGreen: hsl(174, 77%, 80%);
+$midGreen: hsl(174, 86%, 45%);
+$lightPink: hsl(14, 92%, 95%);
+$coral: hsl(15, 100%, 70%);
+$lavender: hsl(226, 100%, 87%);
+
+$white: hsl (0, 0%, 100%);
+$paleBlue: hsl(230, 100%, 99%);
+$lighterBlue: hsl(224, 65%, 95%);
+$lightBlue: hsl(223, 50%, 87%);
+$greyBlue: hsl(225, 20%, 60%);
+$darkBlue: hsl(227, 35%, 25%);
+
+$bodyFont: 'Manrope', sans-serif;
+$regular: 600;
+$bold: 800; */
+
+* {
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #848ead;
+}
+
+#sliderContainer {
+  width: 540px;
+  height: 397px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  filter: drop-shadow(0px 20px 30px rgba(127, 137, 185, 0.1521));
+  background: white;
+}
+
+.tick-slider-value-container {
+  display: flex;
+}
+
+.tick-slider-value-container p {
+  margin: 0px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.price-container {
+  display: flex;
+}
+
+#price {
+  color: #293356;
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0px 8px 0px 0px;
+}
+
+.billing-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  width: 100%;
+  font-size: 12px;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 22px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: -5px;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #7aeadf;
+}
+
+input:focus + .slider {
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input {
+  background-color: purple !important;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount {
+  color: #ff8d68;
+  background-color: #feede8;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.billing-container div:last-child {
+  display: flex;
+}

@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
 * {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -12,7 +14,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   color: #858fad;
-  background-image: url("assets/bg-pattern.svg");
+  background-image: url('assets/bg-pattern.svg');
   background-size: contain;
   background-position: top left;
   background-repeat: no-repeat;
@@ -100,7 +102,9 @@ body {
   width: 100%;
   font-size: 12px;
 }
-.slider-container-center__left, .slider-container-center__center, .slider-container-center__right {
+.slider-container-center__left,
+.slider-container-center__center,
+.slider-container-center__right {
   display: flex;
 }
 .slider-container-center__left {
@@ -144,7 +148,7 @@ body {
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 14px;
   width: 14px;
   left: 4px;
@@ -192,7 +196,8 @@ input {
   height: 136px;
   width: 100%;
 }
-.slider-container-bottom__right, .slider-container-bottom__left {
+.slider-container-bottom__right,
+.slider-container-bottom__left {
   display: flex;
   flex-direction: column;
   align-items: center;

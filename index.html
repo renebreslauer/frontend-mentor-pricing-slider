@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="header">
       <h1>Simple, traffic-based pricing</h1>
       <h2>Sign-up for our 30-day trial. No credit card required.</h2>
+      <img src="assets/pattern-circles.svg" alt="Circles" />
     </div>
     <div id="sliderContainer">
       <div class="price-row">
@@ -31,7 +32,6 @@
         max="200000"
         step="25000"
         value="100000"
-        data-tick-step="5"
         data-tick-id="weightTicks"
         data-value-id="weightValue"
         data-progress-id="weightProgress"
@@ -39,16 +39,39 @@
         data-min-label-id="weightLabelMin"
         data-max-label-id="weightLabelMax"
       />
-      <div class="billing-container">
-        <p>Monthly Billing</p>
-        <div class="toggle-container">
+      <div class="slider-container-center">
+        <div class="slider-container-center__left">
+          <p>Monthly Billing</p>
+        </div>
+        <div class="slider-container-center__center">
           <label class="switch">
             <input type="checkbox" />
             <span class="slider round"></span>
           </label>
         </div>
-        <div>
+        <div class="slider-container-center__right">
           <p>Yearly Billing <span class="discount">25% discount</span></p>
+        </div>
+      </div>
+      <div class="slider-container-bottom">
+        <div class="slider-container-bottom__left">
+          <ul>
+            <li>
+              <img src="assets/icon-check.svg" class="icon-check" />
+              <p>Unlimited websites</p>
+            </li>
+            <li>
+              <img src="assets/icon-check.svg" class="icon-check" />
+              <p>100% data ownership</p>
+            </li>
+            <li>
+              <img src="assets/icon-check.svg" class="icon-check" />
+              <p>Email reports</p>
+            </li>
+          </ul>
+        </div>
+        <div class="slider-container-bottom__right">
+          <div>Start my trial</div>
         </div>
       </div>
     </div>
